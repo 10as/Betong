@@ -7,7 +7,7 @@ function print(e){
     e.preventDefault();
 
     diamet(form.indre.value, form.ytre.value, form.lengde.value)
-    sekker = Math.ceil(volum/12)
+    sekker = Math.ceil(volum/12.5)
     pris = sekker*89
     
     if(volum > 0){
@@ -20,5 +20,5 @@ function print(e){
 }
 
 function diamet(indre,ytre,lengde){ 
-    volum = ((3.14*lengde/10/400) * (ytre * ytre - indre * indre)).toFixed(3);
+    volum = ((Math.PI*lengde/10/400) * (ytre * ytre - indre * indre)).toFixed(3);
 }
