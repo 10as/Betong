@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    <form id="form" class="form" style="text-align: center;">
+    <form id="form" class="form">
         <h1>Betongrør utregning</h1>
-        <label for="indre"> Indre Diameter </label>
-        <input type="number" required name="indre" id="" placeholder="cm" min="1">    <br>
-        <label for="ytre"> Ytre Diameter </label>
-        <input type="number" required name="ytre" id="" placeholder="cm" min="1">     <br>
-        <label for="lengde"> lengde </label>
-        <input type="number" required name="lengde" id="" placeholder="cm" min="1">   <br>
+        <img src="bilder/Screenshot 2022-03-25 112419.png" alt="betongrør bilde" class="bilde">
+        <br><br>
+        <table>
+            <tr>
+                <td><label for="indre"> Indre Diameter </label></td>
+                <td><label for="ytre"> Ytre Diameter </label></td>
+                <td><label for="lengde"> lengde </label></td>
+            </tr>
+            <tr>
+                <td><input type="number" required name="indre" id="" placeholder="cm" min="1"></td>
+                <td><input type="number" required name="ytre" id="" placeholder="cm" min="1"></td>
+                <td><input type="number" required name="lengde" id="" placeholder="cm" min="1"></td>                
+            </tr>
+        </table>
         <br><br>
         <div id="output"></div><br>
         <button>Regn ut</button>
-        <br><br>
-        
-        
     </form>
     
 
