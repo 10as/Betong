@@ -14,7 +14,7 @@ function print(e){
     if(volum > 0){
         output.innerHTML = ""+
         "Du vil trenge " + sekker + " sekk(er) betong <br>" +
-        "som gir en totalpris på " + pris + " kr <br>" ;
+        "Det vill koste " + pris + " kr <br>" ;
     } else {
         output.innerHTML = "venligst sørg for at indre diameter er mindre enn ytre";
     }
